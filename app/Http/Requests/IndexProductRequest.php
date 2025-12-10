@@ -9,7 +9,7 @@ class IndexProductRequest extends FormRequest
     public function rules(): array
     {
         return [
-            'q' => 'string|max:255',
+            'q' => 'nullable|string|max:255',
             'sort' => 'in:asc,desc',
         ];
     }
